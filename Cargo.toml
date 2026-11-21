@@ -1,0 +1,13 @@
+[package]
+name = "osp-fo4-play"
+description = "Playable layer over the osp-fo4 readers and renderer (GPL side of the project)"
+version = "0.0.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+rust-version = "1.88"
+repository = "https://github.com/patodois/osp-fo4-play"
+publish = false
+
+[dependencies]
+# The MIT/Apache side. Code flows from there to here, never back.
+fo4-core = { git = "https://github.com/patodois/osp-fo4", rev = "6c48f91" }
