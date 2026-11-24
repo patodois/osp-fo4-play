@@ -138,8 +138,8 @@ own inputs and compare outputs. Do not read its source, link it or port it.
     files of unstated origin.
 - Game data inside the code: the packer embeds byte blocks copied from vanilla
   Fallout 4 files.
-  - "Fixed blob data (from InsFloorMat01.nif reference)" and "extracted from
-    CapsuleExtStairsFree01.nif" —
+  - Two comments in the file below name the vanilla meshes the blocks were
+    taken from:
     https://github.com/cobaltmods/fallout34havok/blob/2747b3a9c57d79febbc25c30550a0effca856e77/f34havok/vendor/pyn/bhk_autopack.py
   - Class layouts are credited "hk2014 SDK, via Grimrukh/soulstruct-havok";
     that project was not audited.
@@ -306,7 +306,7 @@ own inputs and compare outputs. Do not read its source, link it or port it.
   `doc/hkx findings/` analyses specific game files.
 - AI policy: none.
 - Verdict: **DO NOT USE.** It depends on class data extracted from the game by
-  an unpublished method, most likely the same executable tables Lightbox reads.
+  an unpublished method.
 
 ## 10. vgmstream/vgmstream
 
