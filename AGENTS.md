@@ -21,9 +21,20 @@ this one and still applies to anything you send there.
 
 ## Sources you may use
 
-Code under a licence compatible with GPL-3.0-or-later, whose own origin is
-clean: GPL-3.0, GPL-2.0-or-later, LGPL, MPL-2.0 (when the file is not marked
-"Incompatible With Secondary Licenses"), Apache-2.0, MIT, BSD, Zlib.
+Code whose own origin is clean, under one of the licences below. What each
+licence does to this crate's licence:
+
+| Licence of the source | Effect on this crate |
+|---|---|
+| MIT, BSD, Zlib, ISC, Apache-2.0 | None: the crate stays GPL-3.0-or-later. Keep their notices. |
+| MPL-2.0 (file not marked "Incompatible With Secondary Licenses") | None. The MPL files keep their own licence. |
+| GPL-3.0-or-later, GPL-2.0-or-later, LGPL-2.1-or-later, LGPL-3.0-or-later | None. |
+| GPL-3.0-only (the text names version 3 without "or any later version"), LGPL-3.0-only | The combined work can be offered only under GPL-3.0-only, so the crate would have to drop "or later". **Needs a licence decision by the maintainer before any such code is used.** Until then, do not link or port it. |
+
+A source whose own code is "or later" but which builds in GPL-3.0-only code
+(a vendored library, a dependency) counts as GPL-3.0-only.
+[docs/provenance.md](docs/provenance.md) marks such sources "needs a licence
+decision before use".
 
 Before using any of it:
 

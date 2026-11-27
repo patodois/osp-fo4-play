@@ -8,20 +8,25 @@ Method: LICENSE, README, CONTRIBUTING, manifests, file headers, directory
 listings and commit metadata of the revision named, read through the GitHub API
 and raw.githubusercontent.com on 2026-11-21. Implementation logic was not
 studied and no code was copied. "Only" means the text names GPL version 3
-without "or any later version"; combining such code with this repository makes
-the combined work GPL-3.0 (only).
+without "or any later version". This repository is offered as
+GPL-3.0-or-later; a combined work that includes GPL-3.0-only code can be
+offered only under GPL-3.0-only, which would narrow this crate's licence.
+Sources whose use brings in GPL-3.0-only code are therefore marked **NEEDS A
+LICENCE DECISION BEFORE USE**: usable in a GPL repository, but not here until
+the maintainer decides to narrow the crate's licence (see
+[AGENTS.md](../AGENTS.md)).
 
 ## Verdicts
 
 | # | Project | Revision | Licence found | Verdict |
 |---|---|---|---|---|
 | 1 | Kalmarv/havok-formats | `fa26978` | GPL-3.0-or-later | UNDECIDED (black-box comparator until settled) |
-| 2 | SquireWyrm/nifly-rs | `ba898a4` | GPL-3.0-or-later (own code) | USABLE IN GPL REPO |
-| 2 | ousnius/nifly | `68bb808` (pin of nifly-rs) | GPL-3.0 only | USABLE IN GPL REPO |
+| 2 | SquireWyrm/nifly-rs | `ba898a4` | GPL-3.0-or-later (own code), builds in nifly (GPL-3.0 only) | NEEDS A LICENCE DECISION BEFORE USE |
+| 2 | ousnius/nifly | `68bb808` (pin of nifly-rs) | GPL-3.0 only | NEEDS A LICENCE DECISION BEFORE USE |
 | 3 | cobaltmods/fallout34havok | `2747b3a` | GPL-3.0-or-later (glue), GPL-3.0 (vendored) | USABLE AS BLACK-BOX COMPARATOR ONLY |
-| 4 | Ortham/esplugin | `f964f38` | GPL-3.0, mixed only / or-later | USABLE IN GPL REPO |
-| 4 | Ortham/libloadorder | `c9ea87f` | GPL-3.0, mixed only / or-later | USABLE IN GPL REPO |
-| 4 | loot/libloot | `34bd01d` | GPL-3.0-or-later | USABLE IN GPL REPO |
+| 4 | Ortham/esplugin | `f964f38` | GPL-3.0, mixed only / or-later | NEEDS A LICENCE DECISION BEFORE USE |
+| 4 | Ortham/libloadorder | `c9ea87f` | GPL-3.0, mixed only / or-later | NEEDS A LICENCE DECISION BEFORE USE |
+| 4 | loot/libloot | `34bd01d` | GPL-3.0-or-later, depends on the two above | NEEDS A LICENCE DECISION BEFORE USE |
 | 5 | bmanzzs/fo4-lightbox | `6b52fed` | GPL-3.0 | DO NOT USE |
 | 6 | dimforge/rapier | `475caa3` | Apache-2.0 | USABLE IN GPL REPO |
 | 7 | openfo4/psc-tools | `ec8ebcb` | Apache-2.0 | USABLE IN GPL REPO |
@@ -87,6 +92,9 @@ own inputs and compare outputs. Do not read its source, link it or port it.
 - AI policy: README states "Much of this crate's code, tests and documentation
   was written with Claude". No restriction on contributions.
 - Provenance: a binding over nifly; no sign of decompilation.
+- Verdict: **NEEDS A LICENCE DECISION BEFORE USE.** Its own code is
+  or-later, but it builds nifly in, so linking it brings GPL-3.0-only code
+  (below).
 
 ### nifly (pinned revision)
 
@@ -101,8 +109,9 @@ own inputs and compare outputs. Do not read its source, link it or port it.
 - Test fixtures: 40 files in `tests/input/`, including Fallout 4 and Fallout 76
   NIFs up to 168 KB. Their origin is not stated. Do not copy them.
 - AI policy: none stated.
-- Verdict: **USABLE IN GPL REPO** for linking. The build is then GPL-3.0 only.
-  Keep the nifly test files out of this repository.
+- Verdict: **NEEDS A LICENCE DECISION BEFORE USE.** Usable in a GPL repository
+  for linking, but the build is then GPL-3.0 only. Keep the nifly test files out
+  of this repository.
 
 ## 3. cobaltmods/fallout34havok
 
@@ -162,7 +171,7 @@ own inputs and compare outputs. Do not read its source, link it or port it.
   xEdit, with no game records ("hand-made in a hex editor", "header-only").
 - Provenance: no sign of decompilation.
 - AI policy: none stated.
-- Verdict: **USABLE IN GPL REPO** (combined work GPL-3.0 only).
+- Verdict: **NEEDS A LICENCE DECISION BEFORE USE** (combined work GPL-3.0 only).
 
 ### libloadorder
 
@@ -171,7 +180,7 @@ own inputs and compare outputs. Do not read its source, link it or port it.
   the "or later" header; `src/load_order/openmw.rs`, `src/openmw_config.rs`,
   the benchmark and the FFI test do not.
 - Tests: `Ortham/testing-plugins`, as above.
-- Verdict: **USABLE IN GPL REPO** (combined work GPL-3.0 only).
+- Verdict: **NEEDS A LICENCE DECISION BEFORE USE** (combined work GPL-3.0 only).
 
 ### libloot
 
@@ -184,8 +193,8 @@ own inputs and compare outputs. Do not read its source, link it or port it.
 - The notice asks those making derivative works to talk to the team first, and
   asks people not to distribute unofficial masterlists. These are requests, not
   licence terms.
-- Verdict: **USABLE IN GPL REPO.** Because of its dependencies, a build that
-  links it is GPL-3.0 only.
+- Verdict: **NEEDS A LICENCE DECISION BEFORE USE.** Because of its
+  dependencies, a build that links it is GPL-3.0 only.
 
 ## 5. FO4 Lightbox (bmanzzs/fo4-lightbox)
 
