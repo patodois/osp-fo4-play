@@ -198,7 +198,7 @@ own inputs and compare outputs. Do not read its source, link it or port it.
 
 ## 5. FO4 Lightbox (bmanzzs/fo4-lightbox)
 
-- Found through the FO4 report. Revision: `6b52fed7d9184f1df3bd65fb5a78322ea98f4787`
+- Found while surveying open Fallout 4 projects. Revision: `6b52fed7d9184f1df3bd65fb5a78322ea98f4787`
   (main, 2026-10-26). JavaScript, GLSL, Python, C#.
 - Licence: GPL-3.0 text; README says "GPL-3.0", no "or later".
 - Vendored: PyNifly `anim_fo4.py` unchanged (same chain as item 3), Rapier
@@ -374,8 +374,9 @@ own inputs and compare outputs. Do not read its source, link it or port it.
   condition indices and parameter types.
 - Disclosed exception: before 2026-10-30 the project used nv-rs once to
   cross-check NIF animation layouts. It states that nothing was taken and the
-  check was later replaced by data alone. nv-rs is on our never-open list, so
-  do not reuse layout notes from that period without checking their source tags.
+  check was later replaced by data alone. This repository does not read or
+  use nv-rs, so do not reuse layout notes from that period without checking
+  their source tags.
 - AI policy: much of the project is written with AI assistants and AI-assisted
   contributions are accepted.
 - Verdict: **USABLE IN GPL REPO** as a model for our own docs and method. Its
