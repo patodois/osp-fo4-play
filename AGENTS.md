@@ -4,6 +4,16 @@ This is the GPL side of the project. The permissive side is
 [osp-fo4](https://github.com/patodois/osp-fo4); its own guide is stricter than
 this one and still applies to anything you send there.
 
+## Where is what
+
+| Path | What |
+|---|---|
+| `src/main.rs` | The only code: a binary that links `fo4-core` and prints one line, with one test. |
+| `docs/provenance.md` | Licence and origin audit of every project considered, with a verdict per project. Read it before proposing any source. |
+| `THIRD_PARTY.md` | Every source actually linked or ported, with its licence. |
+| `Cargo.toml`, `Cargo.lock` | The pinned osp-fo4 revision and the locked crates. |
+| `.github/workflows/rust.yml` | CI: format, clippy and tests on stable, tests on the declared minimum Rust. |
+
 ## Licence
 
 - Everything here is GPL-3.0-or-later. Start each source file with
@@ -70,6 +80,11 @@ cargo fmt --check
 cargo clippy --all-targets --locked -- -D warnings
 cargo test --locked
 ```
+
+The first build needs network access: it fetches the pinned osp-fo4 revision
+and the crates in `Cargo.lock`. `cargo test --locked` runs one test,
+`links_the_permissive_core`; `cargo run --locked` prints
+`osp-fo4-play 0.0.0 (GPL-3.0-or-later), built on fo4_core`.
 
 ## Use of AI tools
 
