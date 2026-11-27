@@ -12,7 +12,7 @@ this one and still applies to anything you send there.
 | `docs/provenance.md` | Licence and origin audit of every project considered, with a verdict per project. Read it before proposing any source. |
 | `THIRD_PARTY.md` | Every source actually linked or ported, with its licence. |
 | `Cargo.toml`, `Cargo.lock` | The pinned osp-fo4 revision and the locked crates. |
-| `.github/workflows/rust.yml` | CI: format, clippy and tests on stable, tests on the declared minimum Rust. |
+| `.github/workflows/ci.yml` | CI: format, clippy and tests on stable, tests on the declared minimum Rust. |
 
 ## Licence
 
