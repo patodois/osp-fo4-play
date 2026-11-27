@@ -1,4 +1,4 @@
-# osp-fo4-play
+<h1 align="center"><img src="docs/title.png" alt="osp-fo4-play" width="293"></h1>
 
 <!-- images: title, licence-direction diagram (osp-fo4, MIT/Apache -> osp-fo4-play, GPL; never back) -->
 
