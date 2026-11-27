@@ -17,3 +17,14 @@ jobs:
         run: cargo +stable clippy --all-targets --locked -- -D warnings
       - name: Tests
         run: cargo +stable test --locked
+  msrv:
+    # The rust-version declared in Cargo.toml.
+    runs-on: ubuntu-latest
+    env:
+      CARGO_INCREMENTAL: 0
+    steps:
+      - uses: actions/checkout@v6
+      - name: Toolchain
+        run: rustup toolchain install 1.88 --profile minimal
+      - name: Tests
+        run: cargo +1.88 test --locked

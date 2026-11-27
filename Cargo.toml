@@ -6,8 +6,11 @@ edition = "2021"
 license = "GPL-3.0-or-later"
 rust-version = "1.88"
 repository = "https://github.com/patodois/osp-fo4-play"
+readme = "README.md"
+keywords = ["fallout4", "reimplementation", "game-engine", "gpl"]
+categories = ["games", "game-engines"]
 publish = false
 
 [dependencies]
 # The MIT/Apache side. Code flows from there to here, never back.
-fo4-core = { git = "https://github.com/patodois/osp-fo4", rev = "6c48f91" }
+fo4-core = { git = "https://github.com/patodois/osp-fo4", rev = "6c48f91e4bf6bcedbd0a9adc7f522fcc9c7be496" }

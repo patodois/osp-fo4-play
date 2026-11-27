@@ -74,7 +74,7 @@ dependencies = [
 [[package]]
 name = "fo4-core"
 version = "0.1.0"
-source = "git+https://github.com/patodois/osp-fo4?rev=6c48f91#6c48f91e4bf6bcedbd0a9adc7f522fcc9c7be496"
+source = "git+https://github.com/patodois/osp-fo4?rev=6c48f91e4bf6bcedbd0a9adc7f522fcc9c7be496#6c48f91e4bf6bcedbd0a9adc7f522fcc9c7be496"
 dependencies = [
  "flate2",
  "serde",
