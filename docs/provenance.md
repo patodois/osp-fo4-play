@@ -36,7 +36,7 @@ the maintainer decides to narrow the crate's licence (see
 | 9 | Dexesttp/hkxpack | `659f1f0` | MIT | DO NOT USE |
 | 10 | vgmstream/vgmstream | `24ffd6c` | ISC, plus bundled libraries | USABLE AS BLACK-BOX COMPARATOR ONLY |
 | 11 | mdfairch/FallrimTools | `61bb57d` | Apache-2.0, some files other | USABLE IN GPL REPO, Apache-headed files only |
-| 12 | LootJunkieAzza/NVForever | `9e6d604` | GPL-3.0-or-later | USABLE IN GPL REPO (docs and method only) |
+| 12 | LootJunkieAzza/NVForever | `9e6d604` | GPL-3.0-or-later | DOCS AND METHOD ONLY, CODE UNAUDITED |
 
 "USABLE AS BLACK-BOX COMPARATOR ONLY" means: run its published program on our
 own inputs and compare outputs. Do not read its source, link it or port it.
@@ -379,8 +379,10 @@ own inputs and compare outputs. Do not read its source, link it or port it.
   their source tags.
 - AI policy: much of the project is written with AI assistants and AI-assisted
   contributions are accepted.
-- Verdict: **USABLE IN GPL REPO** as a model for our own docs and method. Its
-  code was not audited and is not covered by this verdict.
+- Verdict: **DOCS AND METHOD ONLY, CODE UNAUDITED.** A model for our own docs
+  and method. Its code was not audited: this is not a clearance to link or port
+  any of it, and `schemas/script/functions.json` comes from another tool's
+  definitions.
 
 ## Not verified
 
